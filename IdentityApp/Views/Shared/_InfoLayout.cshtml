@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap.min.css" />
+    <title>Identity App</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-info">
+        <a class="navbar-brand text-white">IdentityApp</a>
+        <div class="text-white"><partial name="_LoginPartial" /></div>
+    </nav>
+    <div class="m-2">
+        @RenderBody()
+    </div>
+    @RenderSection("Scripts", false)
+</body>
+</html>
